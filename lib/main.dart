@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Location App',
       theme: theme,
+      debugShowCheckedModeBanner: false,
       home: const PlacesScreen(),
     );
   }

@@ -33,20 +33,19 @@ void updateUserPlacesList() async {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Your Places'),
-        actions: [
-          IconButton(icon: const Icon(Icons.add),
-            onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (ctx) => AddPlaceScreen(updatePlaceList:updateUserPlacesList ),),
-              );
-            },
-          ),
-        ],
         backgroundColor: Colors.deepPurple,
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: PlacesList(places: places,)
       ),
+     floatingActionButton: FloatingActionButton(
+        onPressed: () {
+            Navigator.of(context).push(MaterialPageRoute(builder: (ctx) => AddPlaceScreen(updatePlaceList:updateUserPlacesList ),));
+        },
+        backgroundColor: Colors.deepPurple,
+        child: const Icon(Icons.add, color: Colors.white,),
+        ) ,
     );
   }
 }
