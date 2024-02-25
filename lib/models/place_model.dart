@@ -30,12 +30,12 @@ class PlaceModel {
   
  // convert jason to Map using named Constructor
  PlaceModel.fromMapObject(Map<String,dynamic> places) :
- id = places['id'] as String,
- title = places['title'] as String,
- image= File(places['image'] as String),
+ id = places['id'] ,
+ title = places['title'] ,
+ image= File(places['image']),
  location = LocationModel(
- address: places['address'] as String,
- latitude: places['lat'] as double,
- longitude: places['lng'] as double
+ address: places['address'] ,
+ latitude: places['lat'] ,
+ longitude: places['lng'] 
  );
 }

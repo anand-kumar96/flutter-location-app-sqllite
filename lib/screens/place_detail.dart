@@ -1,11 +1,9 @@
 import 'package:location_app/models/place_model.dart';
 import 'package:flutter/material.dart';
-
 import 'package:location_app/screens/map.dart';
 
 class PlaceDetailScreen extends StatelessWidget {
   const PlaceDetailScreen({super.key, required this.place});
-
   final PlaceModel place;
 
   String get locationImage {
