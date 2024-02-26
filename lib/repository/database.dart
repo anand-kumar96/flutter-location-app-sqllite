@@ -47,7 +47,7 @@ class DatabaseRepository {
        CREATE TABLE $placeTable(
        $columnId TEXT PRIMARY KEY, 
        $columnTitle TEXT,
-		   $columnImage TEXT, 
+       $columnImage TEXT, 
        $columnLat   REAL, 
        $columnLang REAL,
        $columnAddress TEXT
